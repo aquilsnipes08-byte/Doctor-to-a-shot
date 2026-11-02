@@ -1,7 +1,6 @@
 
 class Main {
 	public static void main(String[] args) {
-
-	System.out.println("Hi Jack");
+		Doctor magnuesson = new Doctor("magnuesson");
 	}
 }
