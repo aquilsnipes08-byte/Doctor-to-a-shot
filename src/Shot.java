@@ -3,13 +3,13 @@ public class Shot {
     String disease;
     String effect;
 
-    void cureDisease() {
-
+    public void cureDisease() {
+        System.out.println(disease + " was cured!  Yay!");
     }
-    void getDisposed() {
-
+   public  void getDisposed() {
+        System.out.println(effect + "the right effect! yay!");
     }
-    void getsInjected() {
-
+    public void getsInjected() {
+        System.out.println(numDoses + "The right amount for all patients!");
     }
 }
