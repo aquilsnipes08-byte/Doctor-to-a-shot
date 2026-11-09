@@ -1,7 +1,6 @@
 public class Doctor {
 	public String name;
 	public Shot shot = null;
-	public int shotCount = 0;
 
 	public Doctor (String name) {
 		this.name = name;
@@ -10,6 +9,8 @@ public class Doctor {
 	public void acquireShot (String type) {
 		shot = new Shot();
 		shot.disease = type;
+		shot.effect = "Fight against " + shot.disease;
+		shot.numDoses = 1;
 	}
 	
 	public Shot administerShot () {

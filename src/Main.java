@@ -8,14 +8,8 @@ class Main {
 		chell.approvedForShot = true;
 		chell.greetDoctor();
 
-		Shot flu = new Shot();
-		flu.disease = "Flu";
-		flu.effect = "Fight against flu";
-		flu.numDoses = 1;
-		flu.cureDisease();
-
-		chell.getShot(flu);
+		drFreeman.acquireShot("Flu");
+		chell.getShot(drFreeman.administerShot());
 		chell.waveGoodbye();
-
 	}
 }
