@@ -1,20 +1,21 @@
 class Main {
 	public static void main(String[] args) {
 		Doctor drFreeman = new Doctor("Freeman");
-		Doctor drKliener = new Doctor("Kliener");
-		Doctor drVance = new Doctor("Vance");
-		Doctor drCoomer = new Doctor("Coomer");
-		Doctor drMagnuesson = new Doctor("Magnuesson");
 
 		Patient chell = new Patient();
 		chell.name = "Chell";
 		chell.shotNeeded = "Flu";
+		chell.approvedForShot = true;
 		chell.greetDoctor();
-		Patient caroline = new Patient();
-		Patient wheatly = new Patient();
-		Patient cave = new Patient();
-		Patient doug = new Patient();
 
+		Shot flu = new Shot();
+		flu.disease = "Flu";
+		flu.effect = "Fight against flu";
+		flu.numDoses = 1;
+		flu.cureDisease();
+
+		chell.getShot(flu);
+		chell.waveGoodbye();
 
 	}
 }

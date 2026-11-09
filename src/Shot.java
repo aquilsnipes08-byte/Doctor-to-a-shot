@@ -4,7 +4,9 @@ public class Shot {
 	String effect;
 
 	public void cureDisease() {
+		getsInjected();
 		System.out.println(disease + " was cured!  Yay!");
+		getDisposed();
 	}
 	public void getDisposed() {
 		System.out.println(effect + "the right effect! yay!");

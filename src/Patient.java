@@ -6,12 +6,12 @@ public class Patient {
 	void greetDoctor() {
 		System.out.println(name + " Please come to the doctor");
 	}
-	void getShot(String whichShot) {
+	void getShot(Shot whichShot) {
 
-		if (whichShot.equalsIgnoreCase(shotNeeded) && approvedForShot) {
-			System.out.println(name + "got shot " + whichShot);
+		if (shotNeeded.equalsIgnoreCase(whichShot.disease) && approvedForShot) {
+			System.out.println(name + "got shot " + whichShot.disease);
 		} else {
-			System.out.println(name + "NOT approved for  shot " + whichShot);
+			System.out.println(name + "NOT approved for  shot " + whichShot.disease);
 		}
 	}
 	void waveGoodbye() {
