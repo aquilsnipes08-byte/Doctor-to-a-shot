@@ -14,7 +14,9 @@ class Main {
 		flu.numDoses = 1;
 		flu.cureDisease();
 
-		chell.getShot(flu);
+		drFreeman.acquireShot("Flu");
+
+		chell.getShot(drFreeman.administerShot());
 		chell.waveGoodbye();
 
 	}

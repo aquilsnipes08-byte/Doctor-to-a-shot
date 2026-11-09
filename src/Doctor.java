@@ -1,7 +1,6 @@
 public class Doctor {
 	public String name;
 	public Shot shot = null;
-	public int shotCount = 0;
 
 	public Doctor (String name) {
 		this.name = name;
