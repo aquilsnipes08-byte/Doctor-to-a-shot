@@ -3,6 +3,12 @@ public class Shot {
 	String disease;
 	String effect;
 
+	public Shot (String disease, int numDoses) {
+		this.disease = disease;
+		this.effect = "Fight against " + this.disease;
+		this.numDoses = numDoses;
+	}
+
 	public void cureDisease() {
 		getsInjected();
 		System.out.println(disease + " was cured!  Yay!");

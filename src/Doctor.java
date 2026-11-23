@@ -1,21 +1,20 @@
+import java.util.ArrayList;
+
 public class Doctor {
 	public String name;
-	public Shot shot = null;
+	ArrayList<Shot> shots = new ArrayList<Shot>();
 
 	public Doctor (String name) {
 		this.name = name;
 	}
 
 	public void acquireShot (String type) {
-		shot = new Shot();
-		shot.disease = type;
-		shot.effect = "Fight against " + shot.disease;
-		shot.numDoses = 1;
+		shots.add(new Shot(type, 5));
 	}
 	
 	public Shot administerShot () {
-		Shot temp = shot;
-		shot = null;
+		Shot temp = shots.get(0);
+		shots = null;
 		return temp;
 	}
 }

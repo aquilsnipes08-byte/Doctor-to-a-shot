@@ -16,7 +16,7 @@ public class Patient {
 		}
 	}
 	void waveGoodbye() {
-		System.out.println(name + "Have a good day!");
+		System.out.println(name + " Have a good day! ");
 	}
 
 
