@@ -1,12 +1,18 @@
+import java.security.PrivateKey;
+
 public class Shot {
-	int numDoses; //All AJ
-	String disease;
-	String effect;
+	private int numDoses; //All AJ
+	private String disease;
+	private String effect;
 
 	public Shot (String disease, int numDoses) {
 		this.disease = disease;
 		this.effect = "Fight against " + this.disease;
 		this.numDoses = numDoses;
+	}
+
+	public String getDisease() {
+		return disease;
 	}
 
 	public void cureDisease() {

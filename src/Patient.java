@@ -8,11 +8,11 @@ public class Patient {
 	}
 	void getShot(Shot whichShot) {
 
-		if (shotNeeded.equalsIgnoreCase(whichShot.disease) && approvedForShot) {
-			System.out.println(name + " got " + whichShot.disease + " shot " );
+		if (shotNeeded.equalsIgnoreCase(whichShot.getDisease()) && approvedForShot) {
+			System.out.println(name + " got " + whichShot.getDisease() + " shot " );
 			whichShot.cureDisease();
 		} else {
-			System.out.println(name + " NOT approved for  shot " + whichShot.disease);
+			System.out.println(name + " NOT approved for  shot " + whichShot.getDisease());
 		}
 	}
 	void waveGoodbye() {
