@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Doctor {
 	public String name;
-	ArrayList<Shot> shots = new ArrayList<Shot>();
+	ArrayList<Shot> shots = new ArrayList<Shot>();//Jack
 
 	public Doctor (String name) {
 		this.name = name;

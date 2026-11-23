@@ -17,7 +17,7 @@ public class Patient {
 	}
 	void waveGoodbye() {
 		System.out.println(name + " Have a good day! ");
-	}
+	}//AJ
 
 
 
