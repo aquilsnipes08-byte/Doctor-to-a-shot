@@ -1,12 +1,12 @@
 public class Shot {
-	int numDoses;
-	String disease;//AJ
-	String effect;//AJ
+	int numDoses; //All AJ
+	String disease;
+	String effect;
 
 	public Shot (String disease, int numDoses) {
-		this.disease = disease;//Jack
-		this.effect = "Fight against " + this.disease;//Jack
-		this.numDoses = numDoses;//Jack
+		this.disease = disease;
+		this.effect = "Fight against " + this.disease;
+		this.numDoses = numDoses;
 	}
 
 	public void cureDisease() {
@@ -21,6 +21,6 @@ public class Shot {
 		effect = null;
 	}
 	public void getsInjected() {
-		System.out.println(numDoses + "The right amount for all patients!");
+		System.out.println(numDoses + " The right amount for all patients!");
 	}
 }
