@@ -1,9 +1,9 @@
-import java.security.PrivateKey;
 
 public class Shot {
-	private int numDoses; //All AJ
-	private String disease;
-	private String effect;
+	// this doesn't need to be private
+	public int numDoses; //All AJ
+	public String disease;
+	public String effect;
 
 	public Shot (String disease, int numDoses) {
 		this.disease = disease;
